@@ -55,7 +55,7 @@ A string value that is used to do something else with whatever else.-->
 ### Sample Output
 #### PHP
 
-In this example, we have the basic setup. So if the `sample.php` file has the content: 
+In this example, we have the basic setup. So if the `sample.php` file has the content : 
 
 ```php
 <?php echo 'hello world'; ?>
@@ -66,6 +66,11 @@ The generated result would be :
 ```php
 <?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?"); ?>
 ```
+#### JAVASCRIPT
+```js
+// Still on development! :)
+```
+
 
 ### Usage Examples
 #### BASIC SETUP
@@ -116,7 +121,7 @@ grunt.initConfig({
     },
   },
   php: {
-  	expand: true,
+	expand: true,
     cwd: 'src',
     dest: 'dest',
     src: [ '*.php' ] 	    

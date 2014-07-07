@@ -52,7 +52,8 @@ Default value: `'.'`
 
 A string value that is used to do something else with whatever else.-->
 
-### Usage Examples
+### Sample Output
+#### PHP
 
 In this example, we have the basic setup. So if the `sample.php` file has the content: 
 
@@ -66,6 +67,7 @@ The generated result would be :
 <?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?");?>
 ```
 
+### Usage Examples
 #### BASIC SETUP
 
 ```js

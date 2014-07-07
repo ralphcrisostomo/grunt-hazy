@@ -64,7 +64,7 @@ In this example, we have the basic setup. So if the `sample.php` file has the co
 The generated result would be :
 
 ```php
-<?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?");?>
+<?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?"); ?>
 ```
 
 ### Usage Examples

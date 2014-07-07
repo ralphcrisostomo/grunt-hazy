@@ -1,6 +1,6 @@
 # grunt-hazy
 
-> A grunt plugin that decode/obfuscate your `javascript` and `php` files.
+> A grunt plugin that encrypt/decode/obfuscate your `javascript` and `php` files.
 
 
 
@@ -54,9 +54,13 @@ A string value that is used to do something else with whatever else.-->
 
 ### Usage Examples
 
-#### SETUP
-In this example, we have the basic setup. So if the `sample.php` file has the content `<?php echo 'hello world'; ?>`, the generated result would be `<?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?");?>`
+In this example, we have the basic setup. So if the `sample.php` file has the content: 
+```<?php echo 'hello world'; ?>```
 
+The generated result would be :
+```<?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?");?>```
+
+#### BASIC SETUP
 ```js
 grunt.initConfig({
   hazy: {
@@ -73,7 +77,7 @@ grunt.initConfig({
 ```js
 grunt.initConfig({
   php: {
-  	expand: true,
+	expand: true,
     cwd: 'src',
     dest: 'dest',
     src: [ '*.php' ] 	    
@@ -85,7 +89,7 @@ grunt.initConfig({
 ```js
 grunt.initConfig({
   js: {
-  	expand: true,
+	expand: true,
     cwd: 'src',
     dest: 'dest',
     src: [ '*.js' ] 	    
@@ -109,13 +113,13 @@ grunt.initConfig({
     src: [ '*.php' ] 	    
   },
   js: {
-  	expand: true,
+	expand: true,
     cwd: 'src',
     dest: 'dest',
     src: [ '*.js' ] 	    
   },  
   all: {
-  	expand: true,
+	expand: true,
     cwd: 'src',
     dest: 'dest',
     src: [ '*.*' ] 	    

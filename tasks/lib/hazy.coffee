@@ -77,7 +77,7 @@ exports.init = (grunt) ->
     getEncodedPHP: (string) ->
       # TODO - check if php tag is existing on file!
       base64  = btoa(string)
-      encoded = '<?php eval("?>".base64_decode("' + base64  + '")."<?\") ;?>'
+      encoded = '<?php eval("?>".base64_decode("' + base64  + '")."<?\"); ?>'
       encoded
 
     getEncodedJS: (string) ->

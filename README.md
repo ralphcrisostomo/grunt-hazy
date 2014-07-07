@@ -81,6 +81,7 @@ grunt.initConfig({
     options: {},
     files: {
       'dest/sample.php': ['src/sample.php'],
+      'dest/sample.js': ['src/sample.js']
     },
   },
 });

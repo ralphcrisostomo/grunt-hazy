@@ -1,0 +1,51 @@
+{
+  "name": "grunt-hazy",
+  "description": "Thet best Grunt plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ralphcrisostomo/grunt-hazy",
+  "author": {
+    "name": "Ralph Crisostomo",
+    "email": "rrecrisostomo@gmail.com",
+    "url": "http://ralphcrisostomo.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ralphcrisostomo/grunt-hazy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ralphcrisostomo/grunt-hazy/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ralphcrisostomo/grunt-hazy/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-coffee-jshint": "~0.2.1",
+    "grunt": "~0.4.2",
+    "grunt-bump": "0.0.14"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "hazy",
+    "obfuscator",
+    "php",
+    "js"
+  ],
+  "dependencies": {
+    "btoa": "~1.1.2",
+    "chalk": "~0.5.0"
+  }
+}

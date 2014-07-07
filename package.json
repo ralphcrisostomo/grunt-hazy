@@ -1,6 +1,6 @@
 {
   "name": "grunt-hazy",
-  "description": "Thet best Grunt plugin ever.",
+  "description": "A grunt plugin that decode/obfuscate your javascript and php files.",
   "version": "0.1.1",
   "homepage": "https://github.com/ralphcrisostomo/grunt-hazy",
   "author": {

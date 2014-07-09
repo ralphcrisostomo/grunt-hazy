@@ -27,14 +27,14 @@ In your project's Gruntfile, add a section named `hazy` to the data object passe
 
 ```js
 grunt.initConfig({
-  hazy: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    hazy: {
+        options: {
+            // Task-specific options go here.
+        },
+        your_target: {
+            // Target-specific file lists and/or options go here.
+        }
+    }
 });
 ```
 
@@ -85,13 +85,13 @@ $=~[];$={___:++$,$$$$:(![]+"")[$],__$:++$,$_$_:(![]+"")[$],_$_:++$,$_$$:({}+"")[
 
 ```js
 grunt.initConfig({
-  hazy: {
-    options: {},
-    files: {
-      'dest/sample.php': ['src/sample.php'],
-      'dest/sample.js': ['src/sample.js']
-    },
-  },
+    hazy: {
+        options: {},
+        files: {
+            'dest/sample.php': ['src/sample.php'],
+            'dest/sample.js': ['src/sample.js']
+        }
+    }
 });
 ```
 
@@ -99,55 +99,61 @@ grunt.initConfig({
 
 ```js
 grunt.initConfig({
-  php: {
-	expand: true,
-    cwd: 'src',
-    dest: 'dest',
-    src: [ '*.php' ] 	    
-  },
+    hazy: {
+        php: {
+            expand: true,
+            cwd: 'src',
+            dest: 'dest',
+            src: [ '*.php' ]
+        }
+    }
 });
 ```
 #### JAVASCRIPT
 
 ```js
 grunt.initConfig({
-  js: {
-	expand: true,
-    cwd: 'src',
-    dest: 'dest',
-    src: [ '*.js' ] 	    
-  },
+    hazy: {
+        js: {
+            expand: true,
+            cwd: 'src',
+            dest: 'dest',
+            src: [ '*.js' ]
+        }
+    }
 });
 ```
 #### ALL
 
 ```js
 grunt.initConfig({
-  default_options: {
-    options: {},
-    files: {
-      'dest/sample.php': ['src/sample.php'],
-      'dest/sample.js': ['src/sample.js']
-    },
-  },
-  php: {
-	expand: true,
-    cwd: 'src',
-    dest: 'dest',
-    src: [ '*.php' ] 	    
-  },
-  js: {
-	expand: true,
-    cwd: 'src',
-    dest: 'dest',
-    src: [ '*.js' ] 	    
-  },  
-  all: {
-	expand: true,
-    cwd: 'src',
-    dest: 'dest',
-    src: [ '*.*' ] 	    
-  },   
+    hazy: {
+        default_options: {
+            options: {},
+            files: {
+                'dest/sample.php': ['src/sample.php'],
+                'dest/sample.js': ['src/sample.js']
+            }
+        },
+        php: {
+            expand: true,
+            cwd: 'src',
+            dest: 'dest',
+            src: [ '*.php' ]
+        },
+        js: {
+            expand: true,
+            cwd: 'src',
+            dest: 'dest',
+            src: [ '*.js' ]
+        },
+        all: {
+            expand: true,
+            cwd: 'src',
+            dest: 'dest',
+            src: [ '*.*' ]
+        }
+    }
 });
 ```
 

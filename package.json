@@ -1,7 +1,7 @@
 {
   "name": "grunt-hazy",
   "description": "A grunt plugin that encrypt/encode/obfuscate your javascript and php files.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/ralphcrisostomo/grunt-hazy",
   "author": {
     "name": "Ralph Crisostomo",

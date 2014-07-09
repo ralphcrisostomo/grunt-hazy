@@ -11,10 +11,11 @@ exports.init = (grunt) ->
   # ----------
   # REQUIRE
   # ----------
-  btoa  = require('btoa')
-  path  = require('path')
-  chalk = require('chalk')
-  _     = grunt.util._
+  JJEncode  = require('./jjencode')
+  btoa      = require('btoa')
+  path      = require('path')
+  chalk     = require('chalk')
+  _         = grunt.util._
 
   # ----------
   # CLASS
@@ -24,6 +25,8 @@ exports.init = (grunt) ->
       # Merge task-specific and/or target-specific options with these defaults.
       @options = @task.options
         separator: grunt.util.linefeed
+        js_variable: '$'
+        js_encoder: 'jjencode'
 
       # Process task files.
       @processFiles(@task.files)
@@ -81,9 +84,14 @@ exports.init = (grunt) ->
       encoded
 
     getEncodedJS: (string) ->
-      # TODO - encode jv
-      encoded = '":) - not yet fix"'
-      encoded
+      switch @options.js_encoder
+        when 'jjencode' then @getJJEncoded(string)
+        else @getJJEncoded(string)
+
+    getJJEncoded: (string) ->
+      jjencode = new JJEncode()
+      jjencoded = jjencode.jjencode(@options.js_variable, string)
+      jjencoded
 
     isValid: (extname) ->
       _.contains(['.js', '.php'], extname)

@@ -43,4 +43,13 @@ exports.hazy =
     expected = grunt.file.read('test/expected/sample.php')
     test.equal(actual, expected, 'should describe what the custom option(s) behavior is.') 
 
-    test.done() 
+    test.done()
+
+  js: (test) ->
+    test.expect(1)
+
+    actual = grunt.file.read('tmp/sample.js')
+    expected = grunt.file.read('test/expected/sample.js')
+    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.')
+
+    test.done()

@@ -1,6 +1,6 @@
 # grunt-hazy
 
-> A grunt plugin that encrypt/decode/obfuscate your `javascript` and `php` files.
+> A grunt plugin that encrypt/encode/obfuscate your `javascript` and `php` files.
 
 
 
@@ -147,4 +147,5 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+0.1.5: Added javascript encoder
 0.1.0: Initial release

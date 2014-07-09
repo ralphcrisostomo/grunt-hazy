@@ -67,10 +67,18 @@ The generated result would be :
 <?php eval("?>".base64_decode("PD9waHAgZWNobyAnaGVsbG8gd29ybGQnOyA/Pg==")."<?"); ?>
 ```
 #### JAVASCRIPT
+
+In this example, we have the basic setup. So if the `sample.js` file has the content :
+
 ```js
-// Still on development! :)
+console.log('wasap');
 ```
 
+The generated result would be :
+
+```js
+$=~[];$={___:++$,$$$$:(![]+"")[$],__$:++$,$_$_:(![]+"")[$],_$_:++$,$_$$:({}+"")[$],$$_$:($[$]+"")[$],_$$:++$,$$$_:(!""+"")[$],$__:++$,$_$:++$,$$__:({}+"")[$],$$_:++$,$$$:++$,$___:++$,$__$:++$};$.$_=($.$_=$+"")[$.$_$]+($._$=$.$_[$.__$])+($.$$=($.$+"")[$.__$])+((!$)+"")[$._$$]+($.__=$.$_[$.$$_])+($.$=(!""+"")[$.__$])+($._=(!""+"")[$._$_])+$.$_[$.$_$]+$.__+$._$+$.$;$.$$=$.$+(!""+"")[$._$$]+$.__+$._+$.$+$.$$;$.$=($.___)[$.$_][$.$_];$.$($.$($.$$+"\""+$.$$__+$._$+"\\"+$.__$+$.$_$+$.$$_+"\\"+$.__$+$.$$_+$._$$+$._$+(![]+"")[$._$_]+$.$$$_+"."+(![]+"")[$._$_]+$._$+"\\"+$.__$+$.$__+$.$$$+"('\\"+$.__$+$.$$_+$.$$$+$.$_$_+"\\"+$.__$+$.$$_+$._$$+$.$_$_+"\\"+$.__$+$.$$_+$.___+"');"+"\"")())();
+```
 
 ### Usage Examples
 #### BASIC SETUP
@@ -147,5 +155,5 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-0.1.5: Added javascript encoder
-0.1.0: Initial release
+- 0.1.5: Added javascript encoder
+- 0.1.0: Initial release

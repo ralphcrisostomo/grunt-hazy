@@ -71,7 +71,7 @@ The generated result would be :
 In this example, we have the basic setup. So if the `sample.js` file has the content :
 
 ```js
-console.log('wasap');
+console.log('hello world');
 ```
 
 The generated result would be :

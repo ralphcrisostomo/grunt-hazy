@@ -39,13 +39,13 @@ module.exports = class JJEncode
           if s then r += "\"#{s}\"+"
           r += "#{gv}._$+"
           s = ""
-      else if( n is 0x74 ) # 'u'
+      else if( n is 0x74 ) # 't'
           if s then r += "\"#{s}\"+"
           r += "#{gv}.__+"
           s = ""
       else if( n is 0x75 ) # 'u'
           if s then r += "\"#{s}\"+"
-          r += "#{gv}.__+"
+          r += "#{gv}._+"
           s = ""
       else if ( n < 128 )
           if s then r += "\"#{s}" else r += "\""
